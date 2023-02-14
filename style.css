@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Poppins;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+}
+
+.slide1 {
+  display: block !important;
+}
+
+.clip {
+  clip-path: polygon(75% 0%, 75% 36%, 100% 36%, 100% 100%, 0 100%, 0% 60%, 0 0);
+  --webkit-clip-path: polygon(
+    50% 0%,
+    50% 37%,
+    100% 36%,
+    100%,
+    0 100%,
+    0% 60%,
+    0 0
+  );
+}
